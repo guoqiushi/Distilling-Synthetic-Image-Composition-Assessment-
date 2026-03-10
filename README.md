@@ -1,4 +1,4 @@
-# Distilling-Synthetic-Image-Composition-Assessment
+# SynthCompQA: Synthetic-Composition-Quality-Assessment
 
 ## Introduction
 In this project, we propose an approach for estimating the quality of synthetic images generated through image composition. Unlike traditional image composition assessment methods, which primarily focus on aesthetics and distortion, our approach emphasizes semantic consistency and spatial consistency in synthetic images. These factors are particularly important in data augmentation pipelines, where the usefulness of synthetic data depends not only on visual plausibility but also on semantic and spatial correctness.
