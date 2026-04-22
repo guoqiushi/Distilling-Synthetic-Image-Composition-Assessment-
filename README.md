@@ -24,3 +24,24 @@ CUDA_VISIBLE_DEVICES=0,1 accelerate launch --multi_gpu --num_processes 2 --main_
 ```bash
 python train_student.py 
 ```
+
+## Inference: score one image with Qwen3.5-2B
+You can use `infer_qwen_score.py` to score a single image by:
+- semantic/self-consistency,
+- relative-size distortion,
+- irregular/unreasonable objects.
+
+```bash
+python infer_qwen_score.py \
+  --model ../models/Qwen3.5-2B \
+  --image /path/to/your_image.jpg
+```
+
+Example output:
+```json
+{
+  "score": 78,
+  "level": "good",
+  "reason": "主体关系基本合理，局部比例略有失真。"
+}
+```
